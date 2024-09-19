@@ -70,6 +70,24 @@ const _nav = [
   },
   {
     component: CNavGroup,
+    name: 'Blog',
+    to: '/blog',
+    icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Blog',
+        to: '/blog/index',
+      },
+      {
+        component: CNavItem,
+        name: 'CreateBlog',
+        to: '/blog/create',
+      },
+    ],
+  },
+  {
+    component: CNavGroup,
     name: 'Contacts',
     to: '/contacts/index',
     icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,

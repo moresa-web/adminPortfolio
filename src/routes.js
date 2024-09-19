@@ -14,6 +14,8 @@ const Typography = React.lazy(() => import('./views/theme/typography/Typography'
 const Contact = React.lazy(() => import('./views/contact/Contacts'))
 const Visitor = React.lazy(() => import('./views/visitor/Visitor'))
 const VisitorDetail = React.lazy(() => import('./views/visitor/Detail'))
+const Blog = React.lazy(() => import('./views/blog/Blog'))
+const CreateBlog = React.lazy(() => import('./views/blog/CreateBlog'))
 
 // Base
 const Accordion = React.lazy(() => import('./views/base/accordion/Accordion'))
@@ -74,6 +76,8 @@ const routes = [
   { path: '/category/create', name: 'CreateCategory', element: CreateCategory },
   { path: '/brands/index', name: 'Brand', element: Brand },
   { path: '/brands/create', name: 'CreateBrand', element: CreateBrand },
+  { path: '/blog/index', name: 'Blog', element: Blog },
+  { path: '/blog/create', name: 'CreateBlog', element: CreateBlog },
   { path: '/visitor', name: 'Visitor', element: Visitor },
   { path: '/visitor/detail', name: 'Detail', element: VisitorDetail },
   { path: '/theme', name: 'Theme', element: Colors, exact: true },
